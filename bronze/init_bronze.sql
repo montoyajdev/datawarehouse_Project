@@ -8,7 +8,7 @@ CREATE TABLE bronze.crm_cust_info(
     cst_key varchar(50),
     cst_firstname varchar(50),
     cst_lastname varchar(50),
-    cst_material_status varchar(50),
+    cst_marital_status varchar(50),
     cst_gndr varchar(50),
     cst_create_date DATE
 );
@@ -20,6 +20,7 @@ CREATE TABLE bronze.crm_sales_details(
     sls_cust_id int,
     sls_order_dt int,
     sls_ship_dt int,
+    sls_due_dt int,
     sls_sales int,
     sls_quantity int,
     sls_price int
