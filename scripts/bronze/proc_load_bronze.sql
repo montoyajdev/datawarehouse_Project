@@ -1,3 +1,21 @@
+/*
+===============================================
+Stored Procedure: Load Bronze Layer (Source -> Bronze)
+===============================================
+Script Purpose:
+	This stored procedure loads data into the 'bronze' schema from external csv files.
+	It performs:
+	- Truncates the bronze tables before loading data.
+	- Uses the COPY command to load data from csv files to bronze tables.
+Parameters:
+	NONE
+	This stored procedure does not accept any paramters or return any values.
+Usage Example:
+	CALL bronze.load_bronze();
+To view the contents of the procedure:
+SELECT pg_get_functiondef('bronze.load_bronze'::regproc);
+*/
+
 CREATE OR REPLACE PROCEDURE bronze.load_bronze()
     LANGUAGE plpgsql
     AS $procedure$
