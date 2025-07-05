@@ -40,6 +40,7 @@ CREATE TABLE silver.crm_sales_details(
 DROP TABLE IF EXISTS silver.crm_prd_info;
 CREATE TABLE silver.crm_prd_info(
     prd_id	int,
+	cat_id varchar(50),
     prd_key varchar(50),
     prd_nm varchar(50),
     prd_cost decimal(10,2),
